@@ -421,7 +421,14 @@ z-index: 1;
 }
 /* 
 projects */
-
+:root{
+  --red: #f45c5c;
+  --blue:#5c64f4;
+  --green:#9cf678;
+  --yellow:#faff5e;
+  --orange:#ffb921;
+ --darkGreen:#34b012;
+}
 /* temp */
 .btn {
   color: #000000;
@@ -431,7 +438,7 @@ projects */
   text-transform: uppercase;
   border: 2px solid #000000;
   padding: 1vh;
-  box-shadow: .9px 1px 0 0 #ff9728, 1.5px 2px 0 0 #ff9728, 2.5px 3px 0 0 #ff9728, 3.5px 4px 0 0 #ff9728, 4.5px 5px 0 0 #ff9728;
+  box-shadow: .9px 1px 0 0 var(--orange), 1.5px 2px 0 0 var(--orange), 2.5px 3px 0 0 var(--orange), 3.5px 4px 0 0 var(--orange), 4.5px 5px 0 0 var(--orange);
   position: relative;
   inset: 0;
   cursor: pointer;
@@ -440,6 +447,23 @@ projects */
   outline: 2px dashed transparent;
   transition: all 600ms ease;
   border-radius: 14px;
+}
+.btn.red{
+  box-shadow: .9px 1px 0 0 var(--red), 1.5px 2px 0 0 var(--red), 2.5px 3px 0 0 var(--red), 3.5px 4px 0 0 var(--red), 4.5px 5px 0 0 var(--red);
+}
+.btn.green{
+  box-shadow: .9px 1px 0 0 var(--green), 1.5px 2px 0 0 var(--green), 2.5px 3px 0 0 var(--green), 3.5px 4px 0 0 var(--green), 4.5px 5px 0 0 var(--green);
+}
+.btn.dark_green{
+  background-color:RGB(44, 170, 93) ;
+  color: white;
+  box-shadow: .9px 1px 0 0 var(--darkGreen), 1.5px 2px 0 0 var(--darkGreen), 2.5px 3px 0 0 var(--darkGreen), 3.5px 4px 0 0 var(--darkGreen), 4.5px 5px 0 0 var(--darkGreen);
+}
+.btn.blue{
+  box-shadow: .9px 1px 0 0 var(--blue), 1.5px 2px 0 0 var(--blue), 2.5px 3px 0 0 var(--blue), 3.5px 4px 0 0 var(--blue), 4.5px 5px 0 0 var(--blue);
+}
+.btn.yellow{
+  box-shadow: .9px 1px 0 0 var(--yellow), 1.5px 2px 0 0 var(--yellow), 2.5px 3px 0 0 var(--yellow), 3.5px 4px 0 0 var(--yellow), 4.5px 5px 0 0 var(--yellow);
 }
 
 .btn:hover {
