@@ -230,7 +230,7 @@ button{
     display: flex;
 }
 .headerAbout{
-/* background-color: blue; */
+background-color: blue;
 width: 60%;
 }
 .heading {
@@ -249,18 +249,44 @@ width: 60%;
     display: flex;
 }
 .headerPhoto{
-/* background-color: brown; */
+background-color: brown;
 width: 40%;
 display: flex;
 align-items: center;
+position: relative;
 
 }
 .headerPhotoImg{
 border: 3px solid black;
 margin-top: 10rem;
 border-radius: 20px;
-overflow: hidden;
+height: 50vh;
+width: 47vh;
+background-color: rgb(250, 145, 129);
 
+overflow: hidden;
+z-index: 1;
+
+}
+.headerPhotoImg2{
+    position: absolute;
+    border: 3px solid black;
+    border-radius: 20px;
+    top:30vh;
+    left: 14vh;
+    height: 50vh;
+    width: 47vh;
+    background-color: rgb(94, 206, 250);
+}
+.headerPhotoImg3{
+    position: absolute;
+    border: 3px solid black;
+    border-radius: 20px;
+    top:25vh;
+    left: 7vh;
+    height: 50vh;
+    width: 47vh;
+    background-color: rgb(155, 250, 129);
 }
 .descontact {
     display: flex;
