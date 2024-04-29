@@ -26,8 +26,8 @@ html {
     width: 5vh;
     height: 5vh;
     background-color: rgb(119, 119, 231);
-    top: 70%;
-    left: 30%;
+    top: 60%;
+    left: 70%;
   }
 
   /* Green circle */
@@ -36,13 +36,13 @@ html {
     height: 12vh;
     background-color: rgb(54, 208, 54);
     top: 50%;
-    left: 50%;
+    left: 80%;
   }
   .circle.yellow {
     width: 6vh;
     height: 6vh;
     background-color: rgb(227, 238, 110);
-    top: 20%;
+    top: 10%;
     left: 37%;
   }
   @keyframes floatAnimation {
@@ -180,6 +180,11 @@ body{
     background-color: rgb(255, 255, 255);
     border: 2px solid ;
     border-radius: 25px;
+   overflow: hidden;
+}
+.content{
+    overflow-y: scroll;
+    height: 100%;
 }
 /* navbar script */
 .navbar{
@@ -225,14 +230,17 @@ button{
 /* header script */
 .header{
     /* background-color: aqua; */
-    height: 70%;
+    height: 90%;
     width: 100%;
     display: flex;
 }
 .headerAbout{
-background-color: blue;
+/* background-color: blue; */
+position: relative;
 width: 60%;
+height: 100%;
 }
+
 .heading {
     color: black;
     font-size: 4rem;
@@ -249,7 +257,7 @@ width: 60%;
     display: flex;
 }
 .headerPhoto{
-background-color: brown;
+/* background-color: brown; */
 width: 40%;
 display: flex;
 align-items: center;
@@ -257,8 +265,9 @@ position: relative;
 
 }
 .headerPhotoImg{
+position: absolute;
 border: 3px solid black;
-margin-top: 10rem;
+
 border-radius: 20px;
 height: 50vh;
 width: 47vh;
@@ -314,3 +323,100 @@ z-index: 1;
 .description{
     margin-top: 2%;
 }
+
+/* quantities */
+
+.quantities{
+    /* background-color: blue; */
+    height: 10%;
+    display: flex;
+}
+.quantity1{
+  display: flex;
+  width: 33.3%;
+  /* background-color: red; */
+  align-items: center;
+  justify-content: center;
+  border-right: 4px solid RGB(44, 170, 93);
+}
+.quantity2{
+  display: flex;
+
+  width: 33.3%;
+  /* background-color: rgb(64, 255, 0); */
+  align-items: center;
+  justify-content: center;
+  border-right: 4px solid RGB(44, 170, 93);
+}
+.quantity3{
+  display: flex;
+
+  width: 33.3%;
+  /* background-color: rgb(210, 150, 150); */
+  align-items: center;
+  justify-content: center;
+}
+.qcontent{
+  /* background-color: aqua; */
+  width: fit-content;
+  
+}
+.qgreen{
+  font-size: 5vh;
+  color:RGB(44, 170, 93) ;
+}
+/* skills */
+.skillcontain{
+  border: 0.3vh solid black;
+  width: 80%;
+  padding: 2vh;
+  border-radius: 12px;
+  margin: auto;
+}
+.skillheading{
+  border: 0.3vh solid black;
+  width: fit-content;
+  height: 0;
+  padding: 2vh;
+  border-radius: 12px;
+  margin: auto;
+  margin-top: 4% ;
+  margin-bottom: 1%;
+   padding-top: 0;
+   padding-bottom: 1.4%;
+}
+
+.skills-container {
+  display: flex;
+
+
+}
+
+.column {
+  flex: 1;
+  padding: 0 10px; /* Adjust padding as needed */
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.skill-bar {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 5px;
+  height: 20px;
+  position: relative;
+}
+
+.bar {
+  background-color: #894caf;
+  height: 100%;
+  border-radius: 5px;
+}
+
