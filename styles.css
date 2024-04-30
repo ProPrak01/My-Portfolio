@@ -203,7 +203,14 @@ body{
   padding: 0.3vh;
 
 }
+.Btext{
+  background-color: var(--green);
+  padding: 1vh;
+  color:#000000;
+  text-decoration: none;
+  border: 0.3vh solid black;
 
+}
 .button{
   border: 0.2vh solid black;
   padding: 0.3vh 1vh;
@@ -218,7 +225,6 @@ button{
   color: white;
   border-radius: 12px;
   
-
 }
 .Logo{
   display: flex;
@@ -227,7 +233,6 @@ button{
   gap: 1rem;
   color: RGB(44, 170, 93);
   font-size: x-large;
-  text-decoration:underline;
 
 }
 @media (max-width: 768px) {
@@ -324,6 +329,7 @@ height: 100%;
       background-color:  rgb(3, 202, 3);
       color: rgb(255, 255, 255);
       border: 0.3vh solid black;
+      border-radius: 5px;
       padding:  0  0.3vh;
 }
 
@@ -464,7 +470,7 @@ z-index: 1;
 }
 /* skills */
 .skillcontain{
-  position: relative;
+  position: relative  ;
   border: 0.3vh solid black;
   width: 80%;
   padding: 2vh;
@@ -657,7 +663,7 @@ background-color: azure;
 }
 .item_date {
   font-weight: bold;
-  color: #f9b234;
+  color: #1ba419;
 
   -webkit-transition: color .5s ease;
   -o-transition: color .5s ease;
@@ -667,7 +673,7 @@ background-color: azure;
   z-index: 3;
 }
 .card_image img{
- padding:  0 1vh;
+ padding:  0 ;
   
 }
 .item_bg {
@@ -867,14 +873,14 @@ background-color: azure;
   align-items: center;
   height: fit-content;
   width: 50%;
-  background-color: #f8f9fa;
+  background-color: #98ccff;
  
 }
 
 .contactform {
   width: 100%;
 
-  background-color: #f8f9fa;
+  background-color: #98ccff;
   padding: 20px;
   border-radius: 8px;
   width: 100%;
@@ -890,8 +896,8 @@ background-color: azure;
 .contactform input[type="text"], .contactform input[type="email"], .contactform textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  border: 0.3vh solid #000000;
+  border-radius: 12px;
   margin-bottom: 20px;
   box-sizing: border-box;
 }
