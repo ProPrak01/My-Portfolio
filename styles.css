@@ -9,7 +9,8 @@ html {
     position: absolute;
     border-radius: 50%;
     border: 2px solid black;
-    animation: floatAnimation 6s ease-in-out infinite alternate; /* Animation */
+    opacity: 0.5;
+    animation: floatAnimation 4s ease-in-out infinite alternate; /* Animation */
   }
 
   /* Red circle */
@@ -198,8 +199,9 @@ body{
 }
 .buttons{
   display: flex;
-  gap:8vh;
+  gap:8%;
   padding: 0.3vh;
+
 }
 
 .button{
@@ -311,8 +313,18 @@ height: 100%;
     color: black;
     font-size: 9vh;
 }
-.green{
+.Green{
     color: RGB(44, 170, 93);
+    
+    
+    
+
+}
+.gp{
+      background-color:  rgb(3, 202, 3);
+      color: rgb(255, 255, 255);
+      border: 0.3vh solid black;
+      padding:  0  0.3vh;
 }
 
 
@@ -447,11 +459,13 @@ z-index: 1;
 }
 /* skills */
 .skillcontain{
+  position: relative;
   border: 0.3vh solid black;
   width: 80%;
   padding: 2vh;
   border-radius: 12px;
   margin: auto;
+  background-color: #84ff4654;
 }
 .skillheading{
   border: 0.3vh solid black;
@@ -504,9 +518,9 @@ z-index: 1;
   --red: #f45c5c;
   --blue:#5c64f4;
   --green:#9cf678;
-  --yellow:#faff5e;
+  --yellow:#efe818;
   --orange:#ffb921;
- --darkGreen:#34b012;
+ --darkGreen:#4bb12f;
 }
 
 .btn {
@@ -589,14 +603,12 @@ background-color: azure;
   padding: 50px 0;
 }
 .item{
-  -ms-flex-preferred-size: calc(33.33333% - 30px);
-  flex-basis: calc(33.33333% - 30px);
-
+  -ms-flex-preferred-size: calc(33.33% - 30px);
+  flex-basis: calc(33.33% - 30px);
   margin: 0 15px 30px;
-
   overflow: hidden;
-
   border-radius: 28px;
+  
 }
 .item_link {
   display: block;
@@ -691,7 +703,7 @@ background-color: azure;
   width: 70%;
   border: 0.3vh solid black;
   border-radius: 12px;
-  margin: auto;
+  margin:  auto;
   margin-bottom: 2vh;
 }
 
@@ -843,10 +855,77 @@ background-color: azure;
 }
 
 /* contact */
-.contactform{
-  background-color: #4c49ea;
-  width: fit-content;
-  padding: 2vh;
-  margin: auto;
+.contactme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: 50%;
+  background-color: #f8f9fa;
+ 
 }
 
+.contactform {
+  width: 100%;
+
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.contactform label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contactform input[type="text"], .contactform input[type="email"], .contactform textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.submit{
+  border: 0.3vh solid black;
+  border-radius: 12px;
+}
+
+.contactform textarea {
+  height: 150px;
+  resize: none;
+}
+
+/* .contactform input[type="submit"] {
+  display: block;
+  background-color: #4c49ea;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+/* .contactform input[type="submit"]:hover {
+  background-color: #4340d5;
+  color: white;
+} */
+.blue:hover{
+  background-color: var(--blue);
+  color: white;
+}
+.red:hover{
+  background-color: var(--red);
+  color: white;
+}
+.green:hover{
+  background-color:  var(--green);
+  color: white;
+}
+.yellow:hover{
+  background-color: var(--yellow);
+  color: white;
+}
