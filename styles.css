@@ -233,7 +233,11 @@ button{
   gap: 1rem;
   color: RGB(44, 170, 93);
   font-size: x-large;
-
+  
+}
+.Logo img{
+  border: 0.2vh solid black;
+  height: 6vh;
 }
 @media (max-width: 768px) {
   .buttons {
