@@ -687,7 +687,7 @@ background-color: azure;
 
 
 .contactme{
-  height: 30vh;
+  height: fit-content;
   width: 70%;
   border: 0.3vh solid black;
   border-radius: 12px;
@@ -840,5 +840,13 @@ background-color: azure;
   .item_date-box {
     font-size: 16px;
   }
+}
+
+/* contact */
+.contactform{
+  background-color: #4c49ea;
+  width: fit-content;
+  padding: 2vh;
+  margin: auto;
 }
 

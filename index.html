@@ -29,11 +29,11 @@
             </div>
             <div class="buttons">
                 <div class="about"><a href="" class="btn red">About</a></div>
-                <div class="Skills"><a href="" class="btn blue">Skills</a></div>
-                <div class="Portfolio"><a href="" class="btn green">Portfolio</a></div>
-                <div class="Contact"><a href="" class="btn">Contact</a></div>
+                <div class="Skills"><a href="#skills" class="btn blue">Skills</a></div>
+                <div class="Portfolio"><a href="#projects" class="btn green">Projects</a></div>
+                <div class="Contact"><a href="#contact" class="btn">Contact</a></div>
                 <div class="downloadCV">
-                    <div class="about"><a href="" class="btn dark_green" >Download CV</a></div>
+                    <div class="about"><a href="https://github.com/ProPrak01" class="btn dark_green" >GITHUB</a></div>
                 </div>
             </div>
           
@@ -65,9 +65,9 @@
                 to solve their problems with my design
               </div>
               <div class="descontact">
-                <div class="contactMe"><a href="" class="btn dark_green" >Contact Me</a></div>
+                <div class="contactMe"><a href="#contact" class="btn dark_green" >Contact Me</a></div>
                 <div class="viewPortfolio">
-                  View Portfolio
+                  <a href="https://github.com/ProPrak01"> View Github</a>
                   <span class="material-symbols-outlined"> north_east </span>
                 </div>
               </div>
@@ -106,9 +106,9 @@
           </div>
         </div>
           
-        <div class="skillheading">Skills</div>
+        <div class="skillheading" id="skills">Skills</div>
 
-        <div class="skillcontain">
+        <div class="skillcontain" >
           <div class="skills-container">
             <div class="column">
               <div class="skill">
@@ -116,36 +116,60 @@
                 <div class="skill-bar">
                   <div
                     class="bar"
-                    style="width: 90%; background-color: brown"
+                    style="width: 90%; background-color: rgb(28, 121, 233)"
                   ></div>
                 </div>
               </div>
               <div class="skill">
                 <div class="skill-name">CSS</div>
                 <div class="skill-bar">
-                  <div class="bar" style="width: 80%"></div>
+                  <div class="bar" style="width: 85%;background-color: rgb(232, 143, 27)"></div>
                 </div>
               </div>
-              <!-- Add more skills for the first column -->
+           <!-- //col2 -->
+           <div class="skill">
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar">
+              <div class="bar" style="width: 69%;background-color: rgb(251, 112, 216)""></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">React</div>
+            <div class="skill-bar">
+              <div class="bar" style="width: 85%;background-color: rgb(232, 203, 39)""></div>
+            </div>
+          </div>
             </div>
             <div class="column">
+             
               <div class="skill">
-                <div class="skill-name">JavaScript</div>
+                <div class="skill-name">Mongo</div>
                 <div class="skill-bar">
-                  <div class="bar" style="width: 70%"></div>
+                  <div class="bar" style="width: 75%;background-color: rgb(97, 165, 42)""></div>
                 </div>
               </div>
               <div class="skill">
-                <div class="skill-name">Python</div>
+                <div class="skill-name">React-Native</div>
                 <div class="skill-bar">
-                  <div class="bar" style="width: 85%"></div>
+                  <div class="bar" style="width: 55%;background-color: brown""></div>
                 </div>
               </div>
-              <!-- Add more skills for the second column -->
+              <div class="skill">
+                <div class="skill-name">Rust</div>
+                <div class="skill-bar">
+                  <div class="bar" style="width: 85%;background-color: rgb(240, 109, 109)""></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-name">JAVA</div>
+                <div class="skill-bar">
+                  <div class="bar" style="width: 65%;background-color: rgb(51, 223, 94)""></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="skillheading">Projects</div>
+        <div class="skillheading" id="projects">Projects</div>
         <div class="projects">
            
             <div class="cards-container">
@@ -273,24 +297,25 @@
                         </span>
                       </div>
                     </a>
+                    
                   </div>
 
-
+                  <div>More on my GITHUB</div>
                 </div>
               </div>
 
         </div>
         <div class="skillheading">Contact Me
         </div>
-        <div class="contactme">
-          <form id="contactForm" method="post" action="https://script.google.com/macros/s/AKfycbwMhIMH6JE-CTc3hCqLcMUy2mfdZqtMzO-lQlOfinSyQ0j_7byd61g1VgJcsxCJz4A/exec">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message"></textarea><br>
-            <input type="submit" value="Submit">
+        <div class="contactme" id="contact">
+          <form class="contactform" id="contactForm" method="post" action="https://script.google.com/macros/s/AKfycbwMhIMH6JE-CTc3hCqLcMUy2mfdZqtMzO-lQlOfinSyQ0j_7byd61g1VgJcsxCJz4A/exec">
+            <label class="contactNameLabel" for="name">Name:</label><br>
+            <input class="contactNameInput"  type="text" id="name" name="name"><br>
+            <label class="contactEmailLabel" for="email">Email:</label><br>
+            <input class="contactEmailinput"  type="email" id="email" name="email"><br>
+            <label  class="contactMessageLabel" for="message">Message:</label><br>
+            <textarea class="contactMessagetext"  id="message" name="message"></textarea><br>
+            <input  class="contactSubmit" type="submit" value="Submit">
         </form>
         </div>
       </div>
