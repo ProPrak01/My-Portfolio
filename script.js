@@ -3,3 +3,5 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('myNavbar').classList.toggle('menu-open');
     });
 });
+
+
