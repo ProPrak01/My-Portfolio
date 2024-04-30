@@ -686,30 +686,14 @@ z-index: 1;
 }
 
 @media only screen and (max-aspect-ratio: 0.76) {
-  .heading{
-    font-size: 5vh;
-  }
-  .header{
-    flex-direction: column;
-   height: 120%;
-  }
   .headerPhoto{
-    width: 100%;
-    height: 70%;
-  }
-  .headerAbout{
-    width: 100%;
-    height: 50%;
-   
-
-  }
-  .headerAboutContent{
-    margin-left: 4%;
+    padding-left: 0;
   }
   .imgcontainer{
-
-    position: absolute;
-   margin-left: 10%;
+    padding-left: 0;
+  }
+  .headerAboutContent{
+    padding-left: 0;
   }
 }
 @media only screen and (max-width: 979px) {
