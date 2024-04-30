@@ -188,54 +188,120 @@ body{
 }
 /* navbar script */
 .navbar{
-    /* background-color: bisque; */
-    height: 10%;
-    width: 100%;
-    display: flex;
-    gap: 4rem;
-    justify-content:space-around;
-    align-items: center;
+  /* background-color: bisque; */
+  height: 10%;
+  width: 100%;
+  display: flex;
+  gap: 4rem;
+  justify-content:space-around;
+  align-items: center;
 }
 .buttons{
-    display: flex;
-    gap:8vh;
+  display: flex;
+  gap:8vh;
+  padding: 0.3vh;
 }
 
 .button{
-    border: 0.2vh solid black;
-    padding: 0.3vh 1vh;
-    border-radius: 12px;
-  }
+  border: 0.2vh solid black;
+  padding: 0.3vh 1vh;
+  border-radius: 12px;
+}
 
 button{
-    padding: 1rem;
-    background-color:rgb(255, 255, 255);
-    border: 0.14rem solid rgb(0, 0, 0);
-    background-color: RGB(44, 170, 93);
-    color: white;
-    border-radius: 12px;
-    
+  padding: 1rem;
+  background-color:rgb(255, 255, 255);
+  border: 0.14rem solid rgb(0, 0, 0);
+  background-color: RGB(44, 170, 93);
+  color: white;
+  border-radius: 12px;
+  
 
 }
 .Logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    color: RGB(44, 170, 93);
-    font-size: x-large;
-    text-decoration:underline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: RGB(44, 170, 93);
+  font-size: x-large;
+  text-decoration:underline;
 
 }
+@media (max-width: 768px) {
+  .buttons {
+      display: none;
+      transform: translate(-7vh,17vh);
+
+      background-color: var(--red);
+      border: 0.2vh solid;
+      border-radius: 12px;
+      z-index: 3;
+      padding: 0.6vh;
+  }
+ 
+
+  .menu-toggle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .menu-toggle .hamburger {
+      width: 40px;
+      height: 4px;
+      background-color: rgb(102, 112, 255);
+      position: relative;
+      transition: transform 0.4s;
+  }
+
+  .menu-toggle .hamburger::before, .menu-toggle .hamburger::after {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 4px;
+      background-color: rgb(102, 112, 255);
+      transition: transform 0.4s;
+  }
+
+  .menu-toggle .hamburger::before {
+      top: -10px;
+  }
+
+  .menu-toggle .hamburger::after {
+      top: 10px;
+  }
+
+  .menu-open .menu-toggle .hamburger {
+      transform: rotate(45deg);
+  }
+
+  .menu-open .menu-toggle .hamburger::before {
+      transform: translateY(10px) rotate(90deg);
+  }
+
+  .menu-open .menu-toggle .hamburger::after {
+      transform: translateY(-10px) rotate(90deg);
+  }
+
+  .menu-open .buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+  }
+
+}
+
 /* header script */
 .header{
-    background-color: aqua;
+    /* background-color: aqua; */
     height: 90%;
     width: 100%;
     display: flex;
 }
 .headerAbout{
-background-color: blue;
+/* background-color: blue; */
 position: relative;
 width: 60%;
 height: 100%;
@@ -257,7 +323,7 @@ height: 100%;
     display: flex;
 }
 .headerPhoto{
-background-color: brown;
+/* background-color: brown; */
 width: 40%;
 display: flex;
 /* align-items: center;
@@ -341,8 +407,9 @@ z-index: 1;
 
 .quantities{
     /* background-color: blue; */
-    height: 10%;
+    height: 14%;
     display: flex;
+    margin-bottom: 2%;
 }
 .quantity1{
   display: flex;
@@ -389,14 +456,14 @@ z-index: 1;
 .skillheading{
   border: 0.3vh solid black;
   width: fit-content;
-  height: 0;
+  height: fit-content;
   padding: 2vh;
   border-radius: 12px;
   margin: auto;
   margin-top: 4% ;
   margin-bottom: 1%;
    padding-top: 0.1%;
-   padding-bottom: 1.4%;
+   padding-bottom: 0.1%;
 }
 
 .skills-container {
@@ -446,7 +513,7 @@ z-index: 1;
   color: #000000;
   text-decoration: none;
   font-size: 1.5vh;
-
+background-color: azure;
   text-transform: uppercase;
   border: 2px solid #000000;
   padding: 1vh;
@@ -686,11 +753,22 @@ z-index: 1;
 }
 
 @media only screen and (max-aspect-ratio: 0.76) {
+  .header{
+    height: 100%;
+   }
+  .headerAbout{
+    
+    height: 40%;
+  }
   .headerPhoto{
     padding-left: 0;
+    height: 50%;
   }
+
   .imgcontainer{
-    padding-left: 0;
+    top: 6%;
+    left: -2%;
+    scale: 0.7;
   }
   .headerAboutContent{
     padding-left: 0;
