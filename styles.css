@@ -624,7 +624,7 @@ background-color: azure;
   margin: 0 15px 30px;
   overflow: hidden;
   border-radius: 28px;
-  cursor: pointer;
+  
 }
 .item_link {
   display: block;
