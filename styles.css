@@ -609,8 +609,7 @@ background-color: azure;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
+ 
   align-items: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -619,7 +618,7 @@ background-color: azure;
 }
 .item{
 
-  -ms-flex-preferred-size: calc(33.33% - 30px);
+  
   flex-basis: calc(33.33% - 30px);
   margin: 0 15px 30px;
   overflow: hidden;
@@ -636,7 +635,7 @@ background-color: azure;
   position: relative;
 }
 .item_link:hover,
-.item_link:hover .item_date {
+.item_link:hover .item_git {
   text-decoration: none;
   color: #0a0a0a;
 }
@@ -865,7 +864,7 @@ background-color: azure;
   .item_link {
     padding: 22px 40px;
   }
-  .item_date-box {
+  .item_git-box {
     font-size: 16px;
   }
 }
