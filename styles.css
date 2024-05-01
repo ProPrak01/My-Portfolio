@@ -658,14 +658,14 @@ background-color: azure;
   z-index: 2;
   position: relative;
 }
-.item_date-box {
+.item_git-box {
   font-size: 18px;
   color: #222222;
 
   z-index: 2;
   position: relative;
 }
-.item_date {
+.item_git {
   font-weight: bold;
   color: #1ba419;
 
